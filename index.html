@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="testStyle.css" />
+    <link rel="stylesheet" href="styling2.css" />
+    <link type="text/css" rel="stylesheet" href="styling3.css" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/bdb80cfee1.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        #recentActivites {
+            padding-top: 27px;
+            background-color: #ececec;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1.8fr 1.2fr;
+            height: 340px;
+            margin-left: 10px;
+
+        }
+
+        .transactionAndAmount {
+            background-color: rgb(255, 255, 255);
+            margin-left: 50px;
+            grid-row: 1/-1;
+            display: block;
+        }
+
+        .statusAndDate {
+
+            background-color: rgb(255, 255, 255);
+            margin-right: 50px;
+            box-shadow: 0.7px 2.8px rgb(173, 173, 173);
+
+        }
+
+        .heading1 h5:nth-child(1) {
+
+            float: left;
+            padding-top: 12px;
+            padding-left: 20px;
+            padding-bottom: 12px;
+            font-family: 'Poppins';
+
+        }
+
+        .heading1 h5:nth-child(2) {
+
+            float: right;
+            padding-top: 12px;
+            padding-right: 60px;
+            padding-bottom: 12px;
+            font-family: 'Poppins';
+
+
+        }
+
+        .heading2 h5:nth-child(1) {
+
+            float: left;
+            padding-top: 12px;
+            padding-left: 4px;
+            padding-bottom: 12px;
+            font-family: 'Poppins';
+
+        }
+
+        .heading2 h5:nth-child(2) {
+
+            float: right;
+            padding-top: 12px;
+            padding-right: 20px;
+            padding-bottom: 12px;
+            font-family: 'Poppins';
+
+
+        }
+
+        .data h5:nth-child(1) {
+
+            float: left;
+            padding-top: 12px;
+            padding-left: 20px;
+            padding-bottom: 12px;
+            font-family: 'Poppins';
+            color: grey;
+
+        }
+
+        .data h5:nth-child(2) {
+
+            float: right;
+            padding-top: 12px;
+            padding-right: 60px;
+            padding-bottom: 12px;
+            font-family: 'Poppins';
+            color: grey;
+
+        }
+
+        .data2 h5:nth-child(1) {
+
+            float: left;
+            padding-top: 12px;
+            padding-left: 1px;
+            padding-bottom: 12px;
+            font-family: 'Poppins';
+            color: grey;
+
+        }
+
+        .data2 h5:nth-child(2) {
+
+            float: right;
+            padding-top: 12px;
+            padding-right: 20px;
+            padding-bottom: 12px;
+            font-family: 'Poppins';
+            color: grey;
+
+        }
+
+        /* .shortDetails {
+            background-color: red;
+            margin-right: 50px;
+            margin-left: 50px;
+            grid-column: 3/1;
+            display: none;
+
+        }
+
+        .shortDetails div {
+            background-color: rgb(173, 206, 183);
+            padding-left: 32px;
+        } */
+
+        .shortDetailComponent {
+            display: none;
+        }
+
+
+
+
+        @media screen and (max-width:750px) {
+
+            body {
+                overflow-x: hidden;
+            }
+
+
+            .transactionAndAmount {
+
+
+                display: none;
+                width: 0;
+            }
+
+            .statusAndDate {
+                display: none;
+                width: 0;
+            }
+
+            #recentActivites {
+                padding-top: 27px;
+                background-color: #ececec;
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr;
+                margin-left: -15px;
+
+
+            }
+
+            .shortDetailComponent {
+                background-color: rgb(122, 181, 199);
+                display: unset;
+                /* margin: 0 50px 0 32px; */
+                margin-left: 10px;
+                box-shadow: 0.7px 1.px rgb(173, 173, 173);
+            }
+
+            .shortDetailComponent div {
+
+                display: flex;
+
+                /* margin: 0 0 0 16px; */
+            }
+
+            .payAmountDate {
+                width: 86%;
+                background-color: white;
+                height: 130px;
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 7px;
+
+            }
+
+            .payAmountDate h4:nth-child(1) {
+
+                margin-top: 6px;
+            }
+
+
+            .payAmountDate h4:nth-child(2),
+            .payAmountDate h4:nth-child(3) {
+
+                margin-left: 21px;
+                margin-top: -9px;
+
+
+
+            }
+
+
+
+            .payAmountDate h4 {
+                font-family: 'Poppins';
+                color: grey;
+
+
+            }
+
+            .viewMore {
+                background-color: white;
+                width: 10%;
+
+                margin-right: 31px;
+            }
+
+            .viewMore h4 {
+
+                color: grey;
+                padding-top: 36px;
+                padding-left: 15%;
+
+            }
+
+
+        }
+
+        @media screen and (max-width:1002px) and (min-width:320px) {
+
+
+            .transactionAndAmount {
+
+
+                display: none;
+                width: 0;
+            }
+
+            .statusAndDate {
+                display: none;
+                width: 0;
+            }
+
+            #recentActivites {
+                padding-top: 27px;
+                background-color: #ececec;
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr;
+
+
+
+            }
+
+            .shortDetailComponent {
+                background-color: #ffffff;
+                display: unset;
+
+                /* margin: 0 50px 0 32px; */
+            }
+
+            .shortDetailComponent div {
+
+                display: flex;
+                /* margin: 0 0 0 16px; */
+            }
+
+            .payAmountDate {
+                width: 86%;
+                background-color: white;
+                height: 100px;
+                display: flex;
+                flex-direction: column;
+                margin-left: 31px;
+            }
+
+            .payAmountDate h4:nth-child(1) {
+
+                margin-top: 6px;
+            }
+
+
+
+            .payAmountDate h4:nth-child(2),
+            .payAmountDate h4:nth-child(3) {
+
+                margin-left: 21px;
+
+
+            }
+
+            .payAmountDate h4 {
+                font-family: 'Poppins';
+                color: grey;
+                padding-top: 7px;
+
+            }
+
+            .viewMore {
+                background-color: white;
+                width: 10%;
+
+                margin-right: 31px;
+            }
+
+            .viewMore h4 {
+
+                color: grey;
+                padding-top: 36px;
+                padding-left: 15%;
+
+            }
+
+
+
+
+
+
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+    <div class="twoSections">
+
+        <div class="section1">
+            <a class="Close" style="float: right;margin-right: 5%; size: 20px;margin-top: -20px;" href="javascript:void(0)"
+                class="closebtn" onclick="closeNav()">
+                <h5 style="font-family: 'Poppins';font-size: 20px;">X</h5>
+            </a>
+            <img src="https://i.ibb.co/5c63hwb/icon-removebg-preview.png" alt=""/>
+            <h4>easywire</h4>
+            <br>
+            <a id="tab1" href="#"><i class="Icon1 fas fa-home"></i>Home</a>
+            <a id="tab2" href="#"><i class="Icon2 fas fa-history"></i>History</a>
+            <a id="tab3" href="#"><i class="Icon3 fas fa-balance-scale"></i>Balances</a>
+            <a id="tab4" href="#"><i class="Icon4 far fa-credit-card"></i>Cards</a>
+            <a id="tab5" href="#"><i class="Icon5 fas fa-users"></i>Recipients</a>
+            <a id="tab6" href="#"><i class="Icon6 fas fa-file-alt"></i>Reports</a>
+            <br>
+            <hr style="height:1px;border-width:0;color:#0c6b8d;background-color:#0f4b61;">
+            <br>
+            <a id="tab7" href="#"><i class="Icon7 fas fa-cog"></i>Settings</a>
+            <a id="tab8" href="#"><i class="Icon8 fas fa-question-circle"></i>Help</a>
+            <a id="tab9" href="#"><i class="Icon9 fas fa-shield-alt"></i>Privacy</a>
+
+        </div>
+
+        <div class="section2">
+            <div class="navBar">
+                <div class="menuIcon">
+                    <i class="fas fa-bars" onclick="openSideBar()"></i>
+                </div>
+                <div class="topBar">
+                    <input class="searchTransacts" placeholder="&#61442;  Search transactions" />
+                    <input class="searchTransacts2" placeholder="&#61442;  Search transacts" />
+
+                </div>
+
+                <div class="darkOnSideBarOpen">
+                    dark
+                </div>
+
+
+
+
+                <div class="notificationNprofile">
+                    <i class="far fa-bell"></i>
+                    <img src="https://i.ibb.co/C1gbb80/images-modified.png" />
+                    <h5>Lisa Marie</h5>
+                    <a href="#"><i class="fas fa-caret-down"></i></a>
+                </div>
+
+            </div>
+            <hr id="lineBreak">
+
+
+            <div class="userProfile">
+                <img src="https://i.ibb.co/C1gbb80/images-modified.png" />
+                <h1>Good morning, Lisa Marie</h1>
+            </div>
+
+            <div class="locationAndVerified">
+                <h4><i style="color:black" class="fas fa-building"></i> Duke Street Studio</h4>
+
+                <h4 style="padding-left: 7px;"><i style="color:green" class="fas fa-check-circle"></i> Verified Account
+                </h4>
+            </div>
+
+            <div class="buttons">
+                <button>
+                    <p>Add money</p>
+                </button>
+                <button>
+                    <p>Send money</p>
+                </button>
+            </div>
+
+
+
+
+
+            <div class="Progress">
+                <h2>Overview</h2>
+
+                <div class="progressComponents">
+                    <div class="balance">
+
+                        <div class="content">
+                            <div class="logo">
+                                <i class="fas fa-balance-scale"></i>
+                                <div class="Text">
+                                    <h4>Account Balance</h4>
+                                    <h3>$32,000.23</h3>
+                                </div>
+                            </div>
+
+                            <div class="View">
+                                <h4>View all</h4>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class="pending">
+                        <div class="content">
+                            <div class="logo">
+                                <i class="fas fa-spinner"></i>
+                                <div class="Text">
+                                    <h4>Pending</h4>
+                                    <h3>-$19,000.61</h3>
+                                </div>
+                            </div>
+
+                            <div class="View">
+                                <h4>View all</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="processed">
+                        <div class="content">
+                            <div class="logo">
+                                <i class="far fa-check-circle"></i>
+                                <div class="Text">
+                                    <h4>Processed (last 30 days)</h4>
+                                    <h3>$20,000</h3>
+                                </div>
+                            </div>
+
+                            <div class="View">
+                                <h4>View all</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Recent Activites</h2>
+
+            </div>
+
+
+
+            <div id="recentActivites">
+                <div class="transactionAndAmount">
+                    <div class="heading1">
+                        <h5>TRANSACTION</h5>
+                        <h5>AMOUNT</h5>
+                        <hr style="width: 100%;">
+                    </div>
+                    <div class="data">
+                        <h5><i class="fas fa-money-bill"></i> Payment to Molly Sanders</h5>
+                        <h5><b style="color: black;">$25,000</b> USD</h5>
+                        <hr style="width: 100%;">
+                    </div>
+                    <div class="data">
+                        <h5><i class="fas fa-money-bill"></i> Payment to Dough Mann</h5>
+                        <h5><b style="color: black;">$11,000</b> USD</h5>
+                        <hr style="width: 100%;">
+                    </div>
+                    <div class="data">
+                        <h5><i class="fas fa-money-bill"></i> Payment to Erica Frost</h5>
+                        <h5><b style="color: black;">$632</b> USD</h5>
+                        <hr style="width: 100%;">
+                    </div>
+                    <div class="data">
+                        <h5><i class="fas fa-money-bill"></i> Payment to Erica Frost</h5>
+                        <h5><b style="color: black;">$32,000</b> USD</h5>
+                        <hr style="width: 100%;">
+                    </div>
+                    <div class="data">
+                        <h5><i class="fas fa-money-bill"></i> Payment to Daniel Bryan</h5>
+                        <h5><b style="color: black;">$15,434</b> USD</h5>
+                        <hr style="width: 100%;">
+                    </div>
+                    <div class="data">
+                        <h5><i class="fas fa-money-bill"></i> Payment to Josh Matthews</h5>
+                        <h5><b style="color: black;">$2,153</b> USD</h5>
+                        <hr style="width: 100%;">
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="statusAndDate">
+                    <div class="heading2">
+                        <h5>STATUS</h5>
+                        <h5>DATE</h5>
+                        <hr style="width: 100%;">
+                    </div>
+                    <div class="data2">
+                        <h5><b
+                                style="color: black; background-color: rgb(248, 248, 192);padding:3px 9px;border-radius: 12px;">Processing</b>
+                        </h5>
+                        <h5>July 11, 2020</h5>
+                        <hr style="width: 100%;">
+                    </div>
+                    <div class="data2">
+                        <h5><b
+                                style="color: black; background-color: rgb(215, 243, 223);padding:3px 9px;border-radius: 12px;">Success</b>
+                        </h5>
+                        <h5>July 11, 2020</h5>
+                        <hr style="width: 100%;">
+                    </div>
+
+                    <div class="data2">
+                        <h5><b
+                                style="color: black; background-color: rgb(215, 243, 223);padding:3px 9px;border-radius: 12px;">Success</b>
+                        </h5>
+                        <h5>July 11, 2020</h5>
+                        <hr style="width: 100%;">
+                    </div>
+                    <div class="data2">
+                        <h5><b
+                                style="color: black; background-color: rgb(215, 243, 223);padding:3px 9px;border-radius: 12px;">Success</b>
+                        </h5>
+                        <h5>July 11, 2020</h5>
+                        <hr style="width: 100%;">
+                    </div>
+                    <div class="data2">
+                        <h5><b
+                                style="color: black; background-color: rgb(221, 219, 219);padding:3px 9px;border-radius: 12px;">Failed</b>
+                        </h5>
+                        <h5>July 11, 2020</h5>
+                        <hr style="width: 100%;">
+                    </div>
+                    <div class="data2">
+                        <h5><b
+                                style="color: black; background-color: rgb(215, 243, 223);padding:3px 9px;border-radius: 12px;">Success</b>
+                        </h5>
+                        <h5>December 11, 2020</h5>
+                        <hr style="width: 100%;">
+                    </div>
+                </div>
+
+                <div class="shortDetailComponent">
+
+                    <div>
+                        <div class="payAmountDate">
+                            <h4><i class="fas fa-money-bill"></i> Payment to Molly Sanders</h4>
+                            <h4><b style="color:black">$25,000</b> USD</h4>
+                            <h4>July 11, 2020</h4>
+                        </div>
+                        <div class="viewMore">
+                            <h4><i class="fas fa-angle-right"></i></h4>
+                        </div>
+                    </div>
+                    <hr style="width: 100%;">
+
+                    <div>
+                        <div class="payAmountDate">
+                            <h4><i class="fas fa-money-bill"></i> Payment to Doug Mann</h4>
+                            <h4><b style="color:black">$25,000</b> USD</h4>
+                            <h4>July 11, 2020</h4>
+                        </div>
+                        <div class="viewMore">
+                            <h4><i class="fas fa-angle-right"></i></h4>
+                        </div>
+                    </div>
+                    <hr style="width: 100%;">
+
+                    <div>
+                        <div class="payAmountDate">
+                            <h4><i class="fas fa-money-bill"></i> Payment to Erica Frost</h4>
+                            <h4><b style="color:black">$25,000</b> USD</h4>
+                            <h4>July 11, 2020</h4>
+                        </div>
+                        <div class="viewMore">
+                            <h4><i class="fas fa-angle-right"></i></h4>
+                        </div>
+                    </div>
+                    <hr style="width: 100%;">
+
+                    <div>
+                        <div class="payAmountDate">
+                            <h4><i class="fas fa-money-bill"></i> Payment to Erica Frost</h4>
+                            <h4><b style="color:black">$25,000</b> USD</h4>
+                            <h4>July 11, 2020</h4>
+                        </div>
+                        <div class="viewMore">
+                            <h4><i class="fas fa-angle-right"></i></h4>
+                        </div>
+                    </div>
+                    <hr style="width: 100%;">
+
+                    <div>
+                        <div class="payAmountDate">
+                            <h4><i class="fas fa-money-bill"></i> Payment to Erica Frost</h4>
+                            <h4><b style="color:black">$25,000</b> USD</h4>
+                            <h4>July 11, 2020</h4>
+                        </div>
+                        <div class="viewMore">
+                            <h4><i class="fas fa-angle-right"></i></h4>
+                        </div>
+                    </div>
+                    <hr style="width: 100%;">
+
+                    <div>
+                        <div class="payAmountDate">
+                            <h4><i class="fas fa-money-bill"></i> Payment to Erica Frost</h4>
+                            <h4><b style="color:black">$25,000</b> USD</h4>
+                            <h4>July 11, 2020</h4>
+                        </div>
+                        <div class="viewMore">
+                            <h4><i class="fas fa-angle-right"></i></h4>
+                        </div>
+                    </div>
+                    <hr style="width: 100%;">
+
+
+
+                    <!-- <div class="details">
+                        
+                    </div> -->
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+    <script>
+      function openSideBar() {
+            var x = document.getElementsByClassName('section1');
+            for(var i=0; i< x.length;i++){
+            x[i].style.width = "240px";
+            x[i].style.display='unset';
+            x[i].style.zIndex="1";
+
+            }
+            var y = document.getElementsByClassName('darkOnSideBarOpen');
+            for(var i=0; i< x.length;i++){
+            y[i].style.display= "unset";
+            
+            
+            }
+
+            var z = document.getElementsByClassName('Close');
+            
+            for(let i=0;i<z.length;i++){
+                z[i].style.visibility="visible";
+            }
+
+            console.log(y);
+
+           
+        }
+
+        function closeNav() {
+            var x = document.getElementsByClassName('section1');
+            for(var i=0; i< x.length;i++){
+            x[i].style.width = "0";
+            x[i].style.display='none';
+            x[i].style.zIndex="1";
+            }
+            var y = document.getElementsByClassName('darkOnSideBarOpen');
+            var z = document.getElementsByClassName('Close');
+            for(var i=0; i< x.length;i++){
+            y[i].style.display= "none";
+          
+            }
+            for(let i=0;i<z.length;i++){
+                z[i].style.visibility="hidden";
+            }
+    }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+.Progress{
+
+    
+    background-color: #ececec;
+    margin-top: 44px;
+    height: 320px;
+
+}
+
+.Progress h2{
+
+    margin-left: 50px;
+    padding-top: 35px;
+    font-family: 'Poppins';
+}
+
+
+.progressComponents{
+
+    display: grid;
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:22px;
+}
+
+.balance{
+
+    background-color: rgb(255, 255, 255);
+    height: 160px;
+    border-radius: 12px;
+    box-shadow: 1.1px 1.2px rgb(173, 173, 173);
+    
+}
+
+
+.pending{
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    height: 160px;
+    box-shadow: 1.1px 1.2px rgb(173, 173, 173);
+   
+}
+
+.processed{
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    height: 160px;
+    box-shadow: 1.1px 1.2px rgb(173, 173, 173);
+   
+}
+
+.content{
+
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);  
+    margin-top: 27px;
+    grid-row-gap: 10px;
+}
+
+
+.logo{
+
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    display: flex;
+    grid-column: 1/-1;
+    
+}
+
+.logo i{
+
+    font-size: 23px;
+    color: grey;
+    /* float: right;
+    margin-top:16px;
+    margin-left: 20px;
+    margin-right: 17px; */
+    margin-left: 34px;
+    
+    
+    
+}
+
+
+.Text{
+    background-color: rgb(255, 255, 255);
+    margin-left: 17px;
+   
+}
+
+.Text h4{
+
+    color: grey;
+    font-family: 'Poppins';
+}
+
+.Text h3{
+    color: black;
+    font-family: 'Poppins';
+}
+
+
+.View{
+
+    background-color: rgb(255, 255, 255);
+    grid-column: 1 /-1;
+   
+}
+
+.View h4{
+
+    margin-left: 38px;
+    margin-top:30px;
+    font-family: 'Poppins';
+    color: darkcyan;
+}
+
+@media screen and (max-width:1144px) {
+
+    .Progress{
+
+      
+        background-color: #ececec;
+        margin-top: 144px;
+        height: 320px;
+    
+    }
+
+    
+}
+
+
+@media screen and (max-width:1143.70px) and (min-width:1020px) {
+
+    .Text{
+        margin-left: 12px;
+
+    }
+
+    .Text h4{
+        
+        color: grey;
+        font-family: 'Poppins';
+        font-size: 1.2vw;
+    }
+    
+    .Text h3{
+        color: black;
+        font-family: 'Poppins';
+    }
+    
+    .logo i{
+
+        font-size: 23px;
+        color: grey;
+        margin-left: 21px;
+    }
+}
+
+
+@media screen and (max-width:1020px) and (min-width:750px) {
+
+    .Progress{
+
+        height: 670px;
+    }
+
+
+    .progressComponents{
+
+        display: grid;
+        margin-top: 25px;
+        margin-left: 50px;
+        margin-right: 50px;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: 1fr;
+        grid-row-gap:22px;
+        align-items: center;
+    }
+
+    .Progress h2{
+
+        margin-left: 43px;
+    }
+
+    .progressComponents{
+        
+        margin-left: 42px;
+        overflow-x: hidden;
+    }
+
+    .section2{
+        overflow-x: hidden;
+    }
+
+}
+
+
+@media screen and (max-width:750px) and (min-width:348px){
+
+    .Progress{
+
+        height: 670px;
+    }
+
+
+
+    .Progress h2{
+
+        margin-left: 25px;
+    }
+
+    .progressComponents{
+
+        display: grid;
+        margin-top: 25px;
+        margin-left: 25px;
+        overflow-x: hidden;
+        margin-right: 50px;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: 1fr;
+        grid-row-gap:22px;
+        align-items: center;
+    }
+
+}
+
+
+
+@media screen and (max-width:1198px) and (min-width:1140px) {
+
+    .Text{
+        margin-left: 12px;
+
+    }
+
+    .Text h4{
+        
+        color: grey;
+        font-family: 'Poppins';
+        font-size: 1.2vw;
+    }
+    
+    .Text h3{
+        color: black;
+        font-family: 'Poppins';
+    }
+    
+    .logo i{
+
+        font-size: 23px;
+        color: grey;
+        margin-left: 21px;
+    }
+    
+}

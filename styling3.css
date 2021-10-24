@@ -1,0 +1,73 @@
+@media screen and (max-width: 375px){
+
+    .Progress{
+
+        height: 670px;
+    }
+
+    .Progress h2{
+
+        margin-left: 25px;
+    }
+
+    .progressComponents{
+
+        display: grid;
+        margin-top: 25px;
+        margin-left: 25px;
+        overflow-x: hidden;
+        margin-right: 50px;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: 1fr;
+        grid-row-gap:22px;
+        align-items: center;
+    }
+
+
+
+
+
+
+   
+
+    .logo i{
+
+        margin-left: 12px;
+        font-size: 5.3vw;
+    }
+
+
+    .Text{
+        /* background-color: rgb(40, 107, 76); */
+        margin-right: 20px;
+    }
+
+    .Text h3{
+
+        font-size:4.6vw ;
+    }
+
+    .Text h4{
+
+        font-size: 4.1vw;
+    }
+}
+
+@media screen and (max-width:361px) {
+    
+    .Progress{
+
+        height: 670px;
+    }
+
+        .Progress h2{
+
+            margin-left: 18px;
+        }
+
+        .progressComponents{
+
+            margin-left: 19px;
+        }
+}
+

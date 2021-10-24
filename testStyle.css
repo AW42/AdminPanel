@@ -1,0 +1,720 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.twoSections {
+
+    display: flex;
+}
+
+
+.section1 {
+
+    background-color: #126e8f;
+    width: 240px;
+    position: fixed;
+    height: 100vh;
+   
+    display: unset;
+
+
+}
+
+.section2 {
+
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin-left: 230px;
+    height: 100vh;
+
+}
+
+.section1 h4{
+
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 29px;
+    padding-top: 12px;
+    font-size: 21px;
+}
+
+.section1 a{
+
+    display: block;
+    color:#ffffff;
+    padding-left: 12px;
+    padding-top:12px;
+    padding-bottom:12px;
+    
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 12.5px;
+}
+
+.section1 h3{
+
+    padding-left: 3px;
+    margin-top: 20px;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 23px;
+}
+
+.section1 img{
+
+    float: left;
+    margin-left: 3px;
+    margin-top: 5px;
+    width: 55px;
+    height: 50px;
+}
+
+
+#tab1{
+
+    background-color: #0f4b61;
+    margin-left: 7px;
+    margin-right: 7px;
+    border-radius: 8px;
+    
+}
+#tab2{
+
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+#tab3{
+
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+#tab4{
+
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+#tab5{
+
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+#tab6{
+
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+#tab7{
+
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+#tab8{
+
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+#tab9{
+
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+
+.Icon1{
+
+    padding-right: 12px;
+    color: rgb(120, 223, 223);
+}
+
+.Icon2{
+
+    padding-right: 14px;
+}
+
+.Icon3{
+
+    padding-right: 12px;
+}
+
+.Icon4{
+
+    padding-right: 15px;
+}
+
+.Icon5{
+
+    padding-right: 14px;
+}
+
+.Icon6{
+
+    padding-right: 18px;
+    padding-left: 3px;
+}
+
+.Icon7{
+
+    padding-right: 14px;
+}
+
+.Icon8{
+
+    padding-right: 14px;
+}
+
+.Icon9{
+
+    padding-right: 14px;
+}
+
+
+
+.navBar {
+
+    display: flex;
+    background-color: white;
+}
+
+.menuIcon {
+    border-right: 1px solid rgb(180, 178, 178);
+    background-color: rgb(255, 255, 255);
+    display: none;
+}
+
+.menuIcon i {
+
+    margin: 23px 15px 20px 15px;
+}
+
+
+.topBar {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin-left: 19px;
+
+}
+
+
+
+.searchTransacts::-webkit-input-placeholder {
+    font-family: 'Roboto Condensed', FontAwesome;
+    font-weight: normal;
+    font-size: 17px;
+
+
+
+    display: inline-block !important;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-right: 15px;
+
+    color: grey;
+}
+
+
+.searchTransacts {
+
+    margin: 20px 15px;
+    outline: none;
+    border: none;
+    width: 220px;
+    padding: 6px 3px 0px 2px;
+}
+
+.searchTransacts2::-webkit-input-placeholder {
+    font-family: 'Roboto Condensed', FontAwesome;
+    font-weight: normal;
+    font-size: 17px;
+    display: none;
+
+
+    display: inline-block !important;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-right: 15px;
+
+    color: grey;
+}
+
+
+.searchTransacts2 {
+
+    outline: none;
+    border: none;
+    width: 220px;
+    display: none;
+    padding: 6px 3px 0px 2px;
+
+}
+
+
+
+.notificationNprofile {
+
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    margin-right: 19px;
+}
+
+.notificationNprofile i {
+
+    margin-top: 20px;
+    margin-right: 25px;
+    font-size: 23px;
+    color: grey;
+}
+
+.notificationNprofile img {
+
+    width: 41px;
+    height: 37px;
+    margin-top: 12px;
+    margin-right: 13px;
+}
+
+.notificationNprofile h5 {
+
+    margin-top: 21px;
+    margin-right: 12px;
+    font-family: 'Poppins';
+    white-space: nowrap;
+}
+
+
+#lineBreak {
+
+    margin-left: 41px;
+    margin-right: 41px;
+}
+
+
+.darkOnSideBarOpen{
+
+  
+    background-color: rgb(0,0,0,0.8);
+    height: 100vh;
+    opacity: 0.75;
+    width: 100vw;
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+}
+
+.Close{
+
+    
+    color: white;
+    float: right;
+    position: fixed;
+    top:20px;
+    right: 26px;
+    font-size: 0;
+    z-index:1;
+    visibility: none;
+    cursor: pointer;
+
+}
+
+
+
+.brand{
+
+    display: flex;
+}
+
+@media screen and (max-width: 750px) {
+
+    .notificationNprofile h5,
+    a {
+
+        display: none;
+    }
+
+    .notificationNprofile {
+
+        padding-right: 6px;
+        background-color: rgb(255, 255, 255);
+
+    }
+
+    .searchTransacts {
+        display: none;
+    }
+
+    .searchTransacts2 {
+        display: unset;
+        margin: 20px 15px;
+        outline: none;
+        border: none;
+        width: 140px;
+        padding: 6px 3px 0px 2px;
+    }
+
+    .navBar {
+
+        display: flex;
+        background-color: white;
+        border-bottom: 1px solid grey;
+    }
+
+    #lineBreak {
+
+        display: none;
+    }
+
+
+    
+} 
+
+
+@media screen and (max-width: 750px) {
+
+    .section1 {
+
+        display: none;
+    }
+
+    .section2 {
+        margin-left: 0;
+    }
+
+    .menuIcon {
+        display: unset;
+    }
+
+    #lineBreak {
+
+        display: none;
+    }
+
+    .navBar {
+
+        display: flex;
+        background-color: white;
+        border-bottom: 1px solid grey;
+    }
+
+}
+
+
+ @media screen and (min-width:750px){
+
+
+    .section1{
+
+       
+    background-color: #126e8f;
+    width: 240px;
+    position: fixed;
+    height: 100vh;
+    visibility: visible;
+    
+    }
+} 
+
+
+.userProfile{
+
+    display: flex;
+}
+
+.userProfile img{
+
+
+    width: 94px;
+    height: 99px;
+    margin-left: 39px;
+    margin-top: 35px;
+}
+
+
+.userProfile h1{
+
+    margin-top: 45px;
+    margin-left: 15px;
+    font-family: 'Poppins';
+    font-weight: bolder;
+}
+
+
+.buttons{
+
+    float:right;
+    margin-right: 26px;
+    margin-top: -83px;
+}
+
+
+.buttons button:nth-child(1){
+
+    padding:12px 15px;
+    border-radius: 6px;
+    margin-right: 12px;
+    border: 1px solid #126e8f;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(100, 99, 99);
+}
+
+.buttons button p{
+
+    font-size: 17px;
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
+    letter-spacing: 1px
+}
+
+.buttons button:nth-child(2){
+
+    padding:12px 19px;
+    border-radius: 6px;
+    margin-right: 12px;
+    border: 1px solid #126e8f;
+    cursor: pointer;
+    background-color: #2083a7;
+    color: rgb(255, 255, 255);
+}
+
+
+.locationAndVerified{
+
+    display: flex;
+    margin-left: 149px;
+    margin-top:-30px;
+}
+
+.locationAndVerified h4{
+
+    color: gray;
+    font-family: 'Poppins';
+}
+
+.locationAndVerified h4:nth-child(2){
+
+    margin-left: 13px;
+}
+
+
+@media screen and (min-width:768.15px) and (max-width:1143.70px){
+
+    .userProfile h1{
+
+        margin-top: 45px;
+        margin-left: 12px;
+        font-family: 'Poppins';
+        font-weight: bolder;
+        font-size: 28px;
+    }
+    
+    
+    .buttons{
+
+        float:left;
+        margin-left: 43px;
+        margin-top: 73px;
+    }
+    
+
+
+}
+
+@media screen and (max-width:768px) and (min-width:750px){
+
+    .buttons{
+
+        float:left;
+        margin-left: 43px;
+        margin-top: 43px;
+    }
+
+    .locationAndVerified{
+
+        display: block;
+        margin-left: 43px;
+        margin-top:40px;
+    }
+
+    .locationAndVerified h4:nth-child(2){
+
+        margin-left: -8px;
+        margin-top:5px;
+    }
+
+}
+
+@media screen and (max-width:750px) and (min-width:361px) {
+
+   
+    .userProfile img{
+
+
+        width: 74px;
+        height: 79px;
+        margin-left: 11px;
+        margin-top: 35px;
+    }
+
+    .locationAndVerified{
+
+        display: block;
+        margin-left: 26px;
+        margin-top:40px;
+    }
+
+    .locationAndVerified h4:nth-child(2){
+
+        margin-left: -8px;
+        margin-top:5px;
+    }
+
+    .buttons{
+        float:left;
+        margin-top: 30px;
+        margin-left: 24px;
+    }
+    
+    .userProfile h1{
+
+        font-size: 29px;
+        margin-right: 40px;
+    }
+
+
+    .topBar{
+
+        margin-left:2px;
+    }
+}
+
+
+@media screen and (max-width: 360px){
+
+
+    .userProfile img{
+
+
+        width: 74px;
+        height: 79px;
+        margin-left: 8px;
+        margin-top: 35px;
+    }
+
+    .locationAndVerified{
+
+        display: block;
+        margin-left: 26px;
+        margin-top:40px;
+    }
+
+    .locationAndVerified h4:nth-child(2){
+
+        margin-left: -8px;
+        margin-top:5px;
+        padding-top:10px;
+    }
+
+    .buttons{
+        float:left;
+        margin-top: 30px;
+        margin-left: 19px;
+    }
+
+    .buttons button{
+
+        padding:10px 8px;
+    }
+
+
+    .buttons button:nth-child(1){
+
+        padding:12px 8px;
+        border-radius: 6px;
+        margin-right: 12px;
+        border: 1px solid #126e8f;
+        cursor: pointer;
+        background-color: white;
+        color: rgb(100, 99, 99);
+    }
+
+    .buttons button:nth-child(2){
+
+        padding:12px 8px;
+        border-radius: 6px;
+        margin-right: 12px;
+        border: 1px solid #126e8f;
+        cursor: pointer;
+        background-color: #2083a7;
+        color: rgb(255, 255, 255);
+    }
+
+    
+    
+    .buttons button p{
+    
+        font-size: 14px;
+        font-family: 'Roboto Condensed';
+        font-weight: bold;
+        letter-spacing: 1px
+    }
+    
+    .userProfile h1{
+
+        font-size: 32px;
+        margin-right: 46px;
+    }
+
+   .searchTransacts .searchTransacts2{
+
+    margin-right: 50px;
+    padding-right: 1px;
+
+   }
+   
+   .topBar{
+       margin-left: 0.7px;
+       overflow-x: hidden;
+   }
+
+   .notificationNprofile{
+       margin-right: 12px;
+   }
+
+   .notificationNprofile img{
+
+    margin-right: 4px;
+    width: 38px;
+   }
+
+   .notificationNprofile i{
+
+        margin-right: 12px;
+        padding-right: 8px;
+   }
+
+   .userProfile h1{
+
+    font-size: 19px;
+   }
+}
+
+
+@media screen and (min-width:750px){
+
+    .Close{
+        display: unset;
+        width: 240px;
+        visibility: hidden;
+    }
+
+    
+}
